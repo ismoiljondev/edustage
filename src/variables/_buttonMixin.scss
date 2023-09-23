@@ -1,0 +1,28 @@
+@import "./colors.module.scss";
+@mixin btn(
+  $pleft_right: $padding,
+  $color: $secondaryColor,
+  $bgcolor: $mainColor,
+  $borderRadius: $borderRadius,
+  $uppercase: uppercase,
+  $transparent: transparent,
+  $hcolor: $mainColor,
+  $hbcolor: $mainColor
+) {
+  padding: 0 $pleft_right;
+  color: $color;
+  background-color: $bgcolor;
+  border-radius: $borderRadius;
+  border: 1px solid transparent;
+  text-transform: $uppercase;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+  line-height: $pleft_right;
+  font-size: 13px;
+  &:hover {
+    color: $hcolor;
+    border: 1px solid $hbcolor;
+    background-color: $transparent;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../variables/colors.module.scss";
+@import "../../variables/buttonMixin";
+.bluebutton {
+  button {
+    @include btn();
+  }
+}
+
+.yellowbutton {
+  button {
+    @include btn(
+      $bgcolor: $secondaryColor,
+      $color: $mainColor,
+      $transparent: $mainColor,
+      $hcolor: $secondaryColor,
+      $hbcolor: $mainColor
+    );
+  }
+}

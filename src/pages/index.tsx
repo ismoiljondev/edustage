@@ -1,3 +1,4 @@
+import Button from "@/components/Button/Button";
 import Head from "next/head";
 
 export default function Home() {
@@ -10,6 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>EduStage</h1>
+      <Button text={"Learn more"} blue={false} />
+      <Button text={"Learn more"} blue={true} />
     </>
   );
 }
