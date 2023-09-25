@@ -1,13 +1,13 @@
-@import "./colors.module.scss";
+@import "./variables.module.scss";
 @mixin btn(
-  $pleft_right: $padding,
+  $pleft_right: 48px,
   $color: $secondaryColor,
   $bgcolor: $mainColor,
-  $borderRadius: $borderRadius,
+  $borderRadius: 5px,
   $uppercase: uppercase,
   $transparent: transparent,
-  $hcolor: $mainColor,
-  $hbcolor: $mainColor
+  $hovercolor: $mainColor,
+  $hoverbgcolor: $mainColor
 ) {
   padding: 0 $pleft_right;
   color: $color;
@@ -20,8 +20,8 @@
   line-height: $pleft_right;
   font-size: 13px;
   &:hover {
-    color: $hcolor;
-    border: 1px solid $hbcolor;
+    color: $hovercolor;
+    border: 1px solid $hoverbgcolor;
     background-color: $transparent;
     cursor: pointer;
   }

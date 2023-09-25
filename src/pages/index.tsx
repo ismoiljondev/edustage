@@ -1,4 +1,6 @@
-import Button from "@/components/Button/Button";
+import { FeatureClientCard } from "@/components";
+import Grid from "@/components/Grid/Grid";
+import { featureElement } from "@/utils/data/FeatureCardData";
 import Head from "next/head";
 
 export default function Home() {
@@ -11,8 +13,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>EduStage</h1>
-      <Button text={"Learn more"} blue={false} />
-      <Button text={"Learn more"} blue={true} />
+      <Grid type={"four"}>
+        {featureElement.map((e) => (
+          <FeatureClientCard type={"feature"} {...e} key={e?.id} />
+        ))}
+      </Grid>
     </>
   );
 }
