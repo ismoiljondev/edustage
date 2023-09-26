@@ -1,0 +1,86 @@
+export const ClientCardData = [
+  {
+    id: 1,
+    image: "/media/clientq.webp",
+    title: "Davil Saden",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 2,
+    image: "/media/client2.webp",
+    title: "Elite Martin",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 3,
+    image: "/media/clientq.webp",
+    title: "Davil Saden",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 4,
+    image: "/media/client2.webp",
+    title: "Elite Martin",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 5,
+    image: "/media/clientq.webp",
+    title: "Davil Saden",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 6,
+    image: "/media/client2.webp",
+    title: "Elite Martin",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 7,
+    image: "/media/clientq.webp",
+    title: "Davil Saden",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 8,
+    image: "/media/client2.webp",
+    title: "Elite Martin",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 9,
+    image: "/media/clientq.webp",
+    title: "Davil Saden",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 10,
+    image: "/media/client2.webp",
+    title: "Elite Martin",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 11,
+    image: "/media/clientq.webp",
+    title: "Davil Saden",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 12,
+    image: "/media/client2.webp",
+    title: "Elite Martin",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 13,
+    image: "/media/clientq.webp",
+    title: "Davil Saden",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+  {
+    id: 14,
+    image: "/media/client2.webp",
+    title: "Elite Martin",
+    desc: "Him, made can't called over won't there on divide theremale fish beast own his day third seed sixth seas unto.Saw from",
+  },
+];

@@ -12,9 +12,15 @@ const FeatureClientCard: React.FC<cardProps> = (props: cardProps) => {
   return (
     <div className={`${style[`${type}card`]} ${style.card}`}>
       <div className={style.img}>
-        <Image src={image} alt={"this is image"} width={100} height={100} />
+        <Image
+          src={image}
+          alt={"this is image"}
+          width={500}
+          height={500}
+          loading="lazy"
+        />
       </div>
-      <div className={style.text}>
+      <div className={style.card__text}>
         <h2>{title}</h2>
         <p>{desc}</p>
       </div>
