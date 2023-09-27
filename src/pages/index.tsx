@@ -1,6 +1,7 @@
-import Button from "@/components/Button/Button";
+"use client";
 import Head from "next/head";
-
+import HomeView from "@/viwes/Home";
+import Button from "@/components/Button/Button";
 export default function Home() {
   return (
     <>
@@ -10,9 +11,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>EduStage</h1>
-      <Button text={"Learn more"} blue={false} />
-      <Button text={"Learn more"} blue={true} />
+      <HomeView />
     </>
   );
 }
