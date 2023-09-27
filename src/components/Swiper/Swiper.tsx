@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation, Keyboard } from "swiper/modules";
 interface SwiperProps {
   children: ReactNode;
-  type: 2 | 3;
+  type: 2 | 3 | 4;
 }
 
 export default function SwiperCard(props: SwiperProps) {
@@ -34,19 +34,19 @@ export default function SwiperCard(props: SwiperProps) {
         breakpoints={{
           640: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 15,
           },
           768: {
             slidesPerView: type == 2 ? 1 : 2,
-            spaceBetween: 40,
+            spaceBetween: 20,
           },
           850: {
             slidesPerView: 2,
-            spaceBetween: 45,
+            spaceBetween: 25,
           },
           1024: {
             slidesPerView: type,
-            spaceBetween: 50,
+            spaceBetween: 30,
           },
         }}
         modules={[Navigation, Autoplay, Keyboard]}

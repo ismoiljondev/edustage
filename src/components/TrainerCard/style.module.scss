@@ -1,0 +1,35 @@
+@import "../../variables/variables.module.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    color: $mainColor;
+  }
+  p {
+    color: $tertiaryColor;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 25px;
+    background-color: $colorWhite;
+    box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.13);
+    @media (max-width: 990px) {
+      padding: 20px;
+    }
+    &__desc {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 10px 30px rgba(0, 35, 71, 0.15);
+  }
+}

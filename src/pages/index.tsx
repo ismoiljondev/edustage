@@ -1,4 +1,10 @@
+import CourseCard from "@/components/CourseCard/CourseCard";
+import Grid from "@/components/Grid/Grid";
+import SwiperCard from "@/components/Swiper/Swiper";
+import TrainerCard from "@/components/TrainerCard/TrainerCard";
+import { TrainerElement } from "@/utils/data/TrainerCardData";
 import Head from "next/head";
+import { SwiperSlide } from "swiper/react";
 
 export default function Home() {
   return (
