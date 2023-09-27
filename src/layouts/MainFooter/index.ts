@@ -1,2 +1,2 @@
-import MainFooter from "@/layouts/MainFooter/MainFooter";
+import MainFooter from "@/src/layouts/MainFooter/MainFooter";
 export default MainFooter;

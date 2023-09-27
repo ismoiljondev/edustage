@@ -1,5 +1,5 @@
-import Container from "@/components/Container";
-import style from "@/layouts/MainFooter/style.module.scss";
+import Container from "@/src/components/Container/Container";
+import style from "@/src/layouts/MainFooter/style.module.scss";
 import clsx from "clsx";
 function MainFooret() {
   return (

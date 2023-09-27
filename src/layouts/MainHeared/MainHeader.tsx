@@ -1,7 +1,7 @@
 "use cleient";
-import Container from "@/components/Container";
-import Logo from "@/components/Logo";
-import style from "@/layouts/MainHeared/styl.module.scss";
+import Container from "@/src/components/Container/Container";
+import Logo from "@/src/components/Logo";
+import style from "@/src/layouts/MainHeared/styl.module.scss";
 import { useRouter, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 

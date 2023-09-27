@@ -1,5 +1,4 @@
-import style from "@/viwes/Home/style.module.scss";
-import Button from "@/components/Button/Button";
+import style from "@/src/viwes/Home/style.module.scss";
 
 function HomeView() {
   return (

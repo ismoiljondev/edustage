@@ -1,0 +1,42 @@
+@import "@/src/variables/colors.module.scss";
+.text {
+  width: 100%;
+  color: $tertiaryColor;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 100;
+}
+.italic {
+  font-style: italic;
+}
+.normal {
+  font-style: normal;
+}
+.start {
+  text-align: start;
+}
+.center {
+  text-align: center;
+}
+.end {
+  text-align: end;
+}
+.colorWhite {
+  color: $colorWhite;
+}
+.tertiaryColor {
+  color: $tertiaryColor;
+}
+@media (max-width: 576px) {
+  .title {
+    font-size: 30px;
+    margin-bottom: 0.8rem;
+  }
+}
+@media (max-width: 356px) {
+  .title {
+    font-size: 25px;
+    margin-bottom: 0.6rem;
+  }
+}

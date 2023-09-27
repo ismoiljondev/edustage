@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import EduLogo from "../../../public/icons/logo.png";
-import EduLogoTwo from "../../../public/icons/logo2.png";
+import EduLogo from "@/public/icons/logo.png";
+import EduLogoTwo from "@/public/icons/logo2.png";
 
 type LogoProps = {
   logoOption: "optionHome" | "optionOrdinary";

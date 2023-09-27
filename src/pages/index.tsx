@@ -1,7 +1,6 @@
 "use client";
 import Head from "next/head";
-import HomeView from "@/viwes/Home";
-import Button from "@/components/Button/Button";
+import HomeView from "@/src/viwes/Home";
 export default function Home() {
   return (
     <>
