@@ -1,0 +1,56 @@
+@import "../../variables/variables.module.scss";
+
+.card {
+  position: relative;
+  padding: 0;
+  line-height: 25px;
+  font-weight: 400;
+  &__img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+.blur {
+  position: absolute;
+  background: rgba(0, 35, 71, 0.5);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  top: 0;
+  right: 0;
+  width: 275px;
+  padding: 30px 25px;
+  color: $colorWhite;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    & div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 5px;
+    }
+    &__left {
+      border-right: 2px solid $colorWhite;
+      padding-right: 15px;
+      h2 {
+        color: $secondaryColor;
+      }
+    }
+  }
+}

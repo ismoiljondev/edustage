@@ -1,6 +1,7 @@
+import { ReactNode } from "react";
 import style from "./style.module.scss";
 interface buttonProps {
-  text: string;
+  text: ReactNode;
   color: "blue" | "yellow";
   action?: () => void;
 }
