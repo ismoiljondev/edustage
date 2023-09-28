@@ -1,4 +1,4 @@
-import React, { ReactNode, useRef, useState } from "react";
+import { ReactNode} from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,7 +15,7 @@ interface SwiperProps {
   type: 2 | 3 | 4;
 }
 
-export default function SwiperCard(props: SwiperProps) {
+const SwiperCard:React.FC<SwiperProps> = (props: SwiperProps) => {
   const { children, type } = props;
   return (
     <>
@@ -57,3 +57,5 @@ export default function SwiperCard(props: SwiperProps) {
     </>
   );
 }
+
+export default SwiperCard;
