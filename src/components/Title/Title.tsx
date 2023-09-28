@@ -6,15 +6,16 @@ type TitleTagPropsType = {
   children: ReactNode;
   textAlign?: "start" | "center" | "end";
   color?: "colorWhite" | "mainColor";
+  typeTitle?: "titleBig" | "titleMiddle" | "titleLitle";
 };
 
 function Title(props: TitleTagPropsType) {
-  const { children, textAlign, color } = props;
+  const { children, textAlign, color, typeTitle } = props;
 
   return (
     <h2
       className={clsx(
-        style.title,
+        typeTitle ? style[typeTitle] : "titleBig",
         textAlign ? style[textAlign] : style["title"],
         color ? style[color] : style["title"]
       )}
