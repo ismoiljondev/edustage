@@ -1,3 +1,5 @@
+import { CourseCard } from "@/components";
+import { CourseElement } from "@/utils/data/CourseData";
 import Head from "next/head";
 
 export default function Home() {
