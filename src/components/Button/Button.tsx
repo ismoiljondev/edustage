@@ -1,17 +1,19 @@
-import { ReactNode } from "react";
+import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 import style from "./style.module.scss";
-interface buttonProps {
-  text: ReactNode;
-  color: "blue" | "yellow";
-  action?: () => void;
+interface buttonProps
+  extends DetailedHTMLProps<
+    ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
+  color?: "blue" | "yellow";
 }
 
 const Button: React.FC<buttonProps> = (props: buttonProps) => {
-  const { text, color, action } = props;
+  const { children, color, ...rest } = props;
 
   return (
-    <button className={style[`${color}button`]} onClick={action}>
-      {text}
+    <button className={style[`${color || "blue"}button`]} {...rest}>
+      {children}
     </button>
   );
 };
