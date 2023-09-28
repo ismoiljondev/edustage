@@ -1,0 +1,23 @@
+.card {
+  display: grid;
+  gap: 30px;
+}
+
+.threecard {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fourcard {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1000px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 750px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}

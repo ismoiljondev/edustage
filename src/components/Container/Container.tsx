@@ -4,12 +4,13 @@ import clsx from "clsx";
 
 type ContainerProps = {
   children: ReactNode;
+  additionalStyle?: string;
 };
 
 function Container(props: ContainerProps) {
-  const { children } = props;
+  const { children, additionalStyle: additional } = props;
 
-  return <div className={clsx(style.container)}>{children}</div>;
+  return <div className={clsx(style.container, additional)}>{children}</div>;
 }
 
 export default Container;

@@ -1,25 +1,21 @@
+import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 import style from "./style.module.scss";
-import variable from "../../variables/colors.module.scss";
-interface buttonProps {
-  text: string;
-  blue: boolean;
+interface buttonProps
+  extends DetailedHTMLProps<
+    ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
+  color?: "blue" | "yellow";
 }
 
 const Button: React.FC<buttonProps> = (props: buttonProps) => {
-  const { text, blue } = props;
-  if (!blue) {
-    return (
-      <div className={style.bluebutton}>
-        <button>{text}</button>
-      </div>
-    );
-  } else if (blue) {
-    return (
-      <div className={style.yellowbutton}>
-        <button>{text}</button>
-      </div>
-    );
-  }
+  const { children, color, ...rest } = props;
+
+  return (
+    <button className={style[`${color || "blue"}button`]} {...rest}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;
