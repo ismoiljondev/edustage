@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
 @import "@/src/variables/colors.module.scss";
-.titleBig {
+
+.big {
   font-size: 36px;
   width: 100%;
   font-family: "Days One", sans-serif;
@@ -9,7 +10,7 @@
   color: $mainColor;
   text-align: center;
 }
-.titleMiddle {
+.middle {
   font-size: 30px;
   width: 100%;
   font-family: "Days One", sans-serif;
@@ -18,7 +19,7 @@
   color: $mainColor;
   text-align: center;
 }
-.titleLitle {
+.litle {
   font-size: 20px;
   width: 100%;
   font-family: "Days One", sans-serif;
@@ -26,21 +27,7 @@
   color: $mainColor;
   text-align: center;
 }
-.start {
-  text-align: start;
-}
-.center {
-  text-align: center;
-}
-.end {
-  text-align: end;
-}
-.colorWhite {
-  color: $colorWhite;
-}
-.mainColor {
-  color: $mainColor;
-}
+
 @media (max-width: 576px) {
   .title {
     font-size: 30px;

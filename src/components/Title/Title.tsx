@@ -4,22 +4,15 @@ import { ReactNode } from "react";
 
 type TitleTagPropsType = {
   children: ReactNode;
-  textAlign?: "start" | "center" | "end";
-  color?: "colorWhite" | "mainColor";
-  typeTitle?: "titleBig" | "titleMiddle" | "titleLitle";
+  typeTitle?: "big" | "middle" | "litle";
+  additionalStyle?: string;
 };
 
 function Title(props: TitleTagPropsType) {
-  const { children, textAlign, color, typeTitle } = props;
+  const { children, typeTitle, additionalStyle: additional } = props;
 
   return (
-    <h2
-      className={clsx(
-        typeTitle ? style[typeTitle] : "titleBig",
-        textAlign ? style[textAlign] : style["title"],
-        color ? style[color] : style["title"]
-      )}
-    >
+    <h2 className={clsx(typeTitle ? style[typeTitle] : "big", additional)}>
       {children}
     </h2>
   );
