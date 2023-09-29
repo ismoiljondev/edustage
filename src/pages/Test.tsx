@@ -1,28 +1,15 @@
-import Title from "@/src/components/Title/Title";
-import Subtitle from "@/src/components/Subtitle/Subtitle";
+import Typography from "@/src/components/Typography/Typography";
 import style from "@/src/pages/style.module.scss";
+import Container from "../components/Container/Container";
 
 function Test() {
   return (
     <div>
       <h1>test</h1>
-
-      <h2>Title-</h2>
-      <Title typeTitle="middle">Awesome Feature</Title>
-
-      <h2>Subtitle-</h2>
-      <Subtitle additionalStyle={style.red}>
-        Replenish man have thing gathering lights yielding shall you
-      </Subtitle>
-
-      <h2>TitleMiddle-</h2>
-      <Title typeTitle="middle">Welcome to our Institute</Title>
-
-      <h2>TitleLitle-</h2>
-      <Title typeTitle="litle" additionalStyle={style.red}>
-        Sell Online Course
-      </Title>
-
+      <Container>
+        <Typography as="h3">15</Typography>
+        <Typography as="h1">ONE STEP AHEAD THIS SEASON</Typography>
+      </Container>
       <p style={{ textAlign: "center" }}>lorem</p>
     </div>
   );
