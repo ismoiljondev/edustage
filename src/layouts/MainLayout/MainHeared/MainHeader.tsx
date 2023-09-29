@@ -1,9 +1,9 @@
 "use cleient";
 import Container from "@/src/components/Container/Container";
 import Logo from "@/src/components/Logo";
-import style from "@/src/layouts/MainLayout/MainHeared/styl.module.scss";
+import style from "@/src/layouts/MainHeared/styl.module.scss";
 import { useRouter, usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 function MainHeader() {
   const router = useRouter();
@@ -12,7 +12,7 @@ function MainHeader() {
     "optionHome"
   );
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     pathname === "/"
       ? setOptionLogo("optionHome")
       : setOptionLogo("optionOrdinary");
