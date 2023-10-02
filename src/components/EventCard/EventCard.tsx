@@ -1,8 +1,8 @@
 import React from "react";
-import style from "./style.module.scss";
 import Image from "next/image";
-import Button from "../Button/Button";
-interface EventProps {
+import style from "@/components/EventCard/style.module.scss";
+import { Button } from "@/components";
+type EventProps = {
   image: string;
   date?: number;
   month?: string;
@@ -15,9 +15,6 @@ interface EventProps {
 const EventsCard: React.FC<EventProps> = (props: EventProps) => {
   const { image, date, month, timeend, timestart, location, text, buttText } =
     props;
-  function SayHi() {
-    console.log("Hi");
-  }
   return (
     <div className={style.card}>
       <div className={style.card__img}>
@@ -40,7 +37,7 @@ const EventsCard: React.FC<EventProps> = (props: EventProps) => {
           <p>{text}</p>
         </div>
         <div className={style.btn}>
-          <Button color={"yellow"} action={SayHi} text={buttText} />
+          <Button color={"yellow"}>{buttText}</Button>
         </div>
       </div>
     </div>

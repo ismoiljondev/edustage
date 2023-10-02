@@ -1,14 +1,16 @@
-import { Children, ReactNode } from "react";
-import style from "./style.module.scss";
+import { ReactNode } from "react";
+import style from "@/components/Grid/style.module.scss";
 
-interface GridProps {
+type GridProps = {
   children: ReactNode;
-  type : "three" | "four"
+  type: "three" | "four";
 }
 
 const Grid: React.FC<GridProps> = (props: GridProps) => {
   const { children, type } = props;
-  return <div className={`${style[`${type}card`]} ${style.card}`}>{children}</div>;
+  return (
+    <div className={`${style[`${type}card`]} ${style.card}`}>{children}</div>
+  );
 };
 
 export default Grid;

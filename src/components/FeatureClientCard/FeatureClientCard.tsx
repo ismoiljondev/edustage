@@ -1,6 +1,6 @@
-import style from "./style.module.scss";
 import Image from "next/image";
-interface cardProps {
+import style from "@/components/FeatureClientCard/style.module.scss";
+type cardProps = {
   image: string;
   type: "feature" | "client";
   title: string;

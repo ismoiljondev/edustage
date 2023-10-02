@@ -1,7 +1,7 @@
 import Image from "next/image";
-import style from "./style.module.scss";
+import style from "@/components/CourseCard/style.module.scss";
 
-interface CardProps {
+type CardProps = {
   image: string;
   price: number;
   title: string;

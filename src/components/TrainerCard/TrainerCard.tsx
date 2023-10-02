@@ -1,16 +1,16 @@
 import Image from "next/image";
-import style from "./style.module.scss";
+import style from "@/components/TrainerCard/style.module.scss";
 
-interface TrainerProps {
+type TrainerProps = {
   image: string;
   title: string;
   major: string;
   desc: string;
   icons: string;
-}
+};
 
-const TrainerCard: React.FC<TrainerProps> = (props : TrainerProps) => {
-    const {image, title, major, desc, icons} = props
+const TrainerCard: React.FC<TrainerProps> = (props: TrainerProps) => {
+  const { image, title, major, desc, icons } = props;
   return (
     <div className={style.card}>
       <div className={style.card__img}>

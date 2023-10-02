@@ -1,21 +1,16 @@
-import { ReactNode} from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { ReactNode } from "react";
+import { Swiper } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
-// import "./styles.css";
-
-// import required modules
 import { Autoplay, Navigation, Keyboard } from "swiper/modules";
-interface SwiperProps {
+type SwiperProps = {
   children: ReactNode;
   type: 2 | 3 | 4;
 }
 
-const SwiperCard:React.FC<SwiperProps> = (props: SwiperProps) => {
+const SwiperCard: React.FC<SwiperProps> = (props: SwiperProps) => {
   const { children, type } = props;
   return (
     <>
@@ -56,6 +51,6 @@ const SwiperCard:React.FC<SwiperProps> = (props: SwiperProps) => {
       </Swiper>
     </>
   );
-}
+};
 
 export default SwiperCard;
