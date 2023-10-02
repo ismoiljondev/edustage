@@ -1,0 +1,68 @@
+@import "@/src/variables/variables.module.scss";
+.icon__search {
+  fill: $mainColor;
+}
+.header__universal__icon__search {
+  fill: white;
+}
+.not__active {
+  transition: 0.3s;
+  &:hover {
+    color: $secondaryColor;
+  }
+}
+.active {
+  transition: 0.3s;
+  color: $secondaryColor;
+  
+}
+.button__search {
+  width: 30px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gold;
+  margin-left: 40px;
+}
+.close__menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: 0s;
+}
+.open__menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: 0s;
+}
+
+@media (max-width: 990px) {
+  .open__menu {
+    transition: 0.8s;
+    padding-top: 20px;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    overflow: hidden;
+  }
+  .close__menu {
+    transition: 0.8s;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 0;
+    overflow: hidden;
+    max-height: 60vh;
+  }
+  .button__search {
+    margin: 0;
+  }
+  .icon__search {
+    fill: $colorWhite;
+  }
+}

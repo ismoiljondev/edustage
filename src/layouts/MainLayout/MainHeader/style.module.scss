@@ -1,0 +1,74 @@
+@import "@/src/variables/variables.module.scss";
+
+.search__input__open {
+  transition: 0.8s;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+.search__input__close {
+  transition: 0.8s;
+  width: 100%;
+  position: absolute;
+  top: -48px;
+  left: 0;
+}
+
+// ---------------------------
+
+.header__home {
+  background-color: transparent;
+  color: $mainColor;
+}
+.header__universal {
+  background-color: transparent;
+  color: $colorWhite;
+  .icon__search {
+    fill: $colorWhite;
+  }
+}
+.header__in {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  align-items: center;
+  padding: 14px 0;
+  flex-wrap: wrap;
+}
+
+.scroll__home {
+  background-color: $colorWhite;
+  position: fixed;
+}
+.scroll__universal {
+  background-color: $mainColor;
+  position: fixed;
+}
+.scroll__off {
+  background-color: transparent;
+}
+// ---------------------------
+@media (max-width: 990px) {
+  .header__home {
+    background-color: gray;
+    .iconSearch {
+      fill: $colorWhite;
+    }
+  }
+  .header__universal {
+    background-color: gray;
+  }
+  .header__in {
+    color: $colorWhite;
+
+    li {
+      border-bottom: 1px solid #ededed33;
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      padding: 10px 0;
+    }
+  }
+}
