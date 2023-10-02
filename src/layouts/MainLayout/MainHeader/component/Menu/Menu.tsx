@@ -8,7 +8,7 @@ import IconSearch from "@/public/icons/iconSearch.svg";
 import Typography from "@/src/components/Typography/Typography";
 import { menuLinks } from "@/src/layouts/config";
 
-import style from "@/src/layouts/MainLayout/MainHeader/component/Manu/style.module.scss";
+import style from "@/src/layouts/MainLayout/MainHeader/component/Menu/style.module.scss";
 
 type SearchInputPropsType = {
   canditionMenu: boolean;

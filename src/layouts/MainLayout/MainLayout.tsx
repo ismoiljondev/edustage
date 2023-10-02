@@ -1,7 +1,7 @@
 "use client";
 import React, { ReactNode, useEffect, useState } from "react";
 
-import MainHeader from "@/src/layouts/MainLayout/MainHeared";
+import MainHeader from "@/src/layouts/MainLayout/MainHeader";
 import MainFooter from "@/src/layouts/MainLayout/MainFooter";
 
 interface LayoutPropsType {

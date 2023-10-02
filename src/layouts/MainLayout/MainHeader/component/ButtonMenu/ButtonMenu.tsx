@@ -3,7 +3,7 @@ import clsx from "clsx";
 import IconX from "@/public/icons/iconX.svg";
 import IconBars from "@/public/icons/iconBars.svg";
 
-import style from "@/src/layouts/MainLayout/MainHeader/component/ButtonManu/style.module.scss";
+import style from "@/src/layouts/MainLayout/MainHeader/component/ButtonMenu/style.module.scss";
 
 type ButtonMenuPropsType = {
   click?: () => void;
