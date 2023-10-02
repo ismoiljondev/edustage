@@ -1,6 +1,8 @@
-import style from "@/src/components/Container/style.module.scss";
 import { ReactNode } from "react";
+
 import clsx from "clsx";
+
+import style from "@/src/components/Container/style.module.scss";
 
 type ContainerProps = {
   children: ReactNode;

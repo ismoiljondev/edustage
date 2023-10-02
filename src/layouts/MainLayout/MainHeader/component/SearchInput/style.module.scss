@@ -1,0 +1,39 @@
+@import "@/src/variables/variables.module.scss";
+.search__icon {
+  fill: white;
+}
+
+.search__input {
+  background-color: $secondaryColor;
+  padding: 5px 0;
+
+  form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+    input {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      color: white;
+      outline: none;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 0.5rem 0.7rem 0.5rem 0;
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

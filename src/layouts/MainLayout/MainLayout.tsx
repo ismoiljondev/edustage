@@ -1,6 +1,6 @@
 "use client";
-import style from "@/src/layouts/MainLayout/style.module.scss";
-import React, { ReactNode } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
+
 import MainHeader from "@/src/layouts/MainLayout/MainHeared";
 import MainFooter from "@/src/layouts/MainLayout/MainFooter";
 
@@ -10,10 +10,20 @@ interface LayoutPropsType {
 
 function Layout(props: LayoutPropsType) {
   const { children } = props;
+  const [isScroll, setIsScroll] = useState<boolean>(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
+  const handleScroll = () => {
+    setIsScroll(window.scrollY > 200);
+  };
 
   return (
     <>
-      <MainHeader />
+      <MainHeader isScroll={isScroll} />
       {children}
       <MainFooter />
     </>

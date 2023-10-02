@@ -1,6 +1,8 @@
-import style from "@/src/components/Typography/style.module.scss";
-import clsx from "clsx";
 import { ReactNode } from "react";
+
+import clsx from "clsx";
+
+import style from "@/src/components/Typography/style.module.scss";
 
 type TypographyPropsType = {
   children: ReactNode;

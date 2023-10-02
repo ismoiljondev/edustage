@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@$fontWeightFive&display=swap");
 @import "@/src/variables/variables.module.scss";
 
 .h1 {
@@ -9,7 +8,7 @@
   margin-top: 1.5rem;
   font-family: $fontFamilyRubik;
   text-align: center;
-  color: $mainColor;
+  color: inherit;
 }
 
 .h2 {
@@ -17,7 +16,7 @@
   font-family: $fontFamilyRubik;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: $mainColor;
+  color: inherit;
   text-align: center;
   white-space: pre-wrap;
   // -webkit-line-clamp: 3;
@@ -31,7 +30,7 @@
   font-family: $fontFamilyRubik;
   font-weight: $fontWeightFive;
   margin-bottom: 15px;
-  color: $mainColor;
+  color: inherit;
   text-align: center;
 }
 .h4 {
@@ -39,7 +38,7 @@
   width: 100%;
   font-family: $fontFamilyRubik;
   font-weight: $fontWeightFive;
-  color: $mainColor;
+  color: inherit;
   text-align: center;
 }
 .h5 {
@@ -49,14 +48,22 @@
   font-weight: $fontWeightFive;
   margin-bottom: 1rem;
   line-height: 25px;
-  color: $mainColor;
+  color: inherit;
+}
+.h6 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: inherit;
+  font-family: $fontFamilyRubik;
 }
 .p {
-  color: $tertiaryColor;
+  color: inherit;
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 100;
+  font-family: $fontFamilyRoboto;
 }
 
 @media (max-width: 576px) {

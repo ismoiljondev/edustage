@@ -1,0 +1,17 @@
+.search__icon {
+  fill: white;
+}
+
+.button__menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 990px) {
+  .button__menu {
+    display: flex;
+  }
+}

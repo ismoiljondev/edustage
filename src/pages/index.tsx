@@ -1,6 +1,7 @@
 "use client";
 import Head from "next/head";
 import HomeView from "@/src/viwes/Home";
+
 export default function Home() {
   return (
     <>
@@ -10,6 +11,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <HomeView />
+      <h1>lorem</h1>
     </>
   );
 }
