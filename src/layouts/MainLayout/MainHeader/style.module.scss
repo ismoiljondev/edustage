@@ -1,18 +1,23 @@
-@import "@/src/variables/variables.module.scss";
-
-.search__input__open {
-  transition: 0.8s;
+@import "@/src/styles/variables/variables.module.scss";
+@mixin search__input {
+  transition: top 0.8s;
   width: 100%;
   position: absolute;
-  top: 0px;
   left: 0;
 }
+@mixin flex__center {
+  display: flex;
+  align-items: center;
+}
+// ---------------------------
+
+.search__input__open {
+  @include search__input;
+  top: 0px;
+}
 .search__input__close {
-  transition: 0.8s;
-  width: 100%;
-  position: absolute;
+  @include search__input;
   top: -48px;
-  left: 0;
 }
 
 // ---------------------------
@@ -29,10 +34,9 @@
   }
 }
 .header__in {
-  display: flex;
+  @include flex__center;
   justify-content: space-between;
   column-gap: 20px;
-  align-items: center;
   padding: 14px 0;
   flex-wrap: wrap;
 }
@@ -65,8 +69,7 @@
     li {
       border-bottom: 1px solid #ededed33;
       width: 100%;
-      display: flex;
-      align-items: start;
+      @include flex__center;
       justify-content: start;
       padding: 10px 0;
     }

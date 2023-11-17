@@ -1,4 +1,5 @@
-@import "@/src/variables/variables.module.scss";
+@import "@/src/styles/variables/variables.module.scss";
+@import "@/src/styles/mixins/mixin.module.scss";
 .icon__search {
   fill: $mainColor;
 }
@@ -6,7 +7,10 @@
   fill: white;
 }
 .not__active {
+  font-family: $fontFamilyRoboto;
   transition: 0.3s;
+  font-weight: 100;
+
   &:hover {
     color: $secondaryColor;
   }
@@ -14,29 +18,22 @@
 .active {
   transition: 0.3s;
   color: $secondaryColor;
-  
+  font-family: $fontFamilyRoboto;
+  font-weight: 100;
 }
 .button__search {
   width: 30px;
   background-color: transparent;
   border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include display__flex(flex, center, center, row, 0);
   color: gold;
   margin-left: 40px;
 }
 .close__menu {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  transition: 0s;
+  @include display__flex(flex, center, center, row, 20px);
 }
 .open__menu {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  transition: 0s;
+  @include display__flex(flex, center, center, row, 20px);
 }
 
 @media (max-width: 990px) {
@@ -44,17 +41,15 @@
     transition: 0.8s;
     padding-top: 20px;
     width: 100%;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
+    @include display__flex(flex, start, start, column, 20px);
     overflow: hidden;
+    max-height: 60vh;
+    overflow-y: auto;
   }
   .close__menu {
     transition: 0.8s;
     width: 100%;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
+    @include display__flex(flex, start, start, column, 20px);
     height: 0;
     overflow: hidden;
     max-height: 60vh;

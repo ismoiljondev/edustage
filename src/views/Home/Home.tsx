@@ -1,12 +1,12 @@
-import style from "@/src/viwes/Home/style.module.scss";
+import style from "@/src/views/Home/style.module.scss";
 import clsx from "clsx";
+import Showcase from "@/src/views/Home/Showcase";
 
 function HomeView() {
   return (
     <>
-      <div className={clsx(style.home)}>
-        <h1 className={style.h1}>Our Popular Courses</h1>
-      </div>
+      <Showcase />
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, neque
         eius! Quaerat, dolore temporibus obcaecati enim, saepe id omnis

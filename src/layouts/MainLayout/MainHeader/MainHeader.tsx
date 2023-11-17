@@ -1,4 +1,5 @@
 "use client";
+
 import { usePathname } from "next/navigation";
 
 import { useLayoutEffect, useState } from "react";
@@ -26,19 +27,25 @@ function MainHeader(props: MainHeaderPropsType) {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
 
   useLayoutEffect(() => {
-    pathname === "/" ? setOptionHeader(true) : setOptionHeader(false);
+    setOptionHeader(pathname === "/");
   }, [pathname]);
 
   return (
     <nav
       className={clsx(
-        optionHeader ? style.header__home : style.header__universal,
-        openSearch ? style.search__input__open : style.search__input__close,
-        isScroll
-          ? optionHeader
-            ? style.scroll__home
-            : style.scroll__universal
-          : style.scroll__off
+        {
+          [style.header__home]: optionHeader,
+          [style.header__universal]: !optionHeader,
+        },
+        {
+          [style.search__input__open]: openSearch,
+          [style.search__input__close]: !openSearch,
+        },
+        {
+          [optionHeader ? style.scroll__home : style.scroll__universal]:
+            isScroll,
+          [style.scroll__off]: !isScroll,
+        }
       )}
     >
       <SearchInput click={() => setOpenSearch(!openSearch)} />

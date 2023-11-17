@@ -1,0 +1,21 @@
+@import "@/src/styles/variables/variables.module.scss";
+.showcase {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/media/home-banner.jpg.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: $mainColor;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}

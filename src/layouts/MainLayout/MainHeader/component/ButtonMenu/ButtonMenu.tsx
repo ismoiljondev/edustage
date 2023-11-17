@@ -12,6 +12,7 @@ type ButtonMenuPropsType = {
 
 function ButtonMenu(props: ButtonMenuPropsType) {
   const { click, canditionMenu } = props;
+
   return (
     <button className={clsx(style.button__menu)} onClick={click}>
       {canditionMenu ? (

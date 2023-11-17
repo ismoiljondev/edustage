@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@$fontWeightFive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +13,10 @@ a {
 
 li {
   list-style: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .swiper {

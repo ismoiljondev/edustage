@@ -1,5 +1,6 @@
+@import "@/src/styles/variables/variables.module.scss";
 .search__icon {
-  fill: white;
+  fill: $secondaryColor;
 }
 
 .button__menu {

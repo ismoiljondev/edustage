@@ -1,0 +1,15 @@
+@mixin display__flex(
+  $display,
+  $align_items,
+  $justify__content,
+  $flex__direction,
+  $gap
+) {
+  display: $display;
+  align-items: $align_items;
+  justify-content: $justify__content;
+  flex-direction: $flex__direction;
+  gap: $gap;
+}
+
+// @include display__flex(flex, center, center, row, 20px);

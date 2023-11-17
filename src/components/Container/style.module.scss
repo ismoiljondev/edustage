@@ -1,8 +1,18 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1140px;
   padding: 0 15px;
+}
+@media (max-width: 1660px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
 }
 @media (max-width: 990px) {
   .container {

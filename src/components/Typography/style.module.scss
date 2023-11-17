@@ -1,23 +1,33 @@
-@import "@/src/variables/variables.module.scss";
+@import "@/src/styles/variables/variables.module.scss";
+@mixin rtl(
+  $fontw__weight,
+  $font__size,
+  $text__align,
+  $color,
+  $font__family,
+  $margin__bottom
+) {
+  font-size: $font__size;
+  font-weight: $fontw__weight;
+  text-align: $text__align;
+  color: $color;
+  margin-bottom: $margin__bottom;
 
+  @if $font__family {
+    font-family: $font__family;
+  } @else {
+    font-family: $fontFamilyRoboto;
+  }
+}
 .h1 {
-  font-size: 48px;
-  font-weight: $fontWeightFive;
+  @include rtl(fontWeightFive, 48px, center, inherit, $fontFamilyRubik, 3rem);
   text-transform: uppercase;
-  margin-bottom: 3rem;
   margin-top: 1.5rem;
-  font-family: $fontFamilyRubik;
-  text-align: center;
-  color: inherit;
 }
 
 .h2 {
-  font-size: 36px;
-  font-family: $fontFamilyRubik;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: inherit;
-  text-align: center;
+  @include rtl(600, 36px, center, inherit, $fontFamilyRubik, 1rem);
+
   white-space: pre-wrap;
   // -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -26,58 +36,38 @@
 }
 
 .h3 {
-  font-size: 28px;
-  font-family: $fontFamilyRubik;
-  font-weight: $fontWeightFive;
-  margin-bottom: 15px;
-  color: inherit;
-  text-align: center;
+  @include rtl($fontWeightFive, 28px, center, inherit, $fontFamilyRubik, 15px);
 }
 .h4 {
-  font-size: 20px;
+  @include rtl($fontWeightFive, 20px, center, inherit, $fontFamilyRubik, 0);
+
   width: 100%;
-  font-family: $fontFamilyRubik;
-  font-weight: $fontWeightFive;
-  color: inherit;
-  text-align: center;
 }
 .h5 {
-  text-align: center;
+  @include rtl($fontWeightFive, 20px, center, inherit, $fontFamilyRubik, 1rem);
+
   text-transform: uppercase;
-  font-size: 20px;
-  font-weight: $fontWeightFive;
-  margin-bottom: 1rem;
   line-height: 25px;
-  color: inherit;
 }
 .h6 {
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  color: inherit;
-  font-family: $fontFamilyRubik;
+  @include rtl(600, 14px, center, inherit, $fontFamilyRubik, 0);
 }
 .p {
-  color: inherit;
-  text-align: center;
-  font-size: 16px;
+  @include rtl(100, 16px, center, inherit, $fontFamilyRoboto, 0);
+
   font-style: normal;
-  font-weight: 100;
-  font-family: $fontFamilyRoboto;
 }
 
 @media (max-width: 576px) {
   .h2 {
-    font-size: 30px;
-    margin-bottom: 0.8rem;
+    @include rtl(600, 30px, center, inherit, $fontFamilyRubik, 0.8rem);
   }
   .h1 {
-    font-size: 40px;
+    @include rtl(fontWeightFive, 40px, center, inherit, $fontFamilyRubik, 3rem);
   }
 }
 @media (max-width: 356px) {
   .h2 {
-    font-size: 25px;
-    margin-bottom: 0.6rem;
+    @include rtl(600, 25px, center, inherit, $fontFamilyRubik, 0.6rem);
   }
 }

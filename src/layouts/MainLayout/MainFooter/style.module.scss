@@ -1,5 +1,126 @@
+@import "@/src/styles/variables/variables.module.scss";
+
+.footer__links__in__title {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+  text-align: start;
+}
+.footer__links__in__ul__text {
+  transition: color 0.8s;
+  color: $tertiaryColor;
+  &:hover {
+    color: $colorWhite;
+  }
+}
 .footer {
   width: 100%;
   background-color: #002347;
   color: white;
+  padding: 200px 0 100px;
+}
+.footer__in {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  .footer__links__in {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    .footer__links__in__ul {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+// ----------------------------------
+.footer__newsletter {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 30px;
+  .footer__newsletter__in {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.inputEmail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    input {
+      background-color: transparent;
+      height: 40px;
+      border: none;
+      font-weight: 300;
+      color: #ffffff;
+      border-radius: 0;
+      font-size: 14px;
+      padding: 10px;
+      padding-left: 20px;
+      outline: none;
+    }
+    button {
+      background: #fdc632;
+      color: #002347;
+      border-radius: 0;
+      padding: 8px 20px;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: "Rubik", sans-serif;
+      font-weight: 600;
+      border: 0;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
+.bac_div {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #334f6c;
+
+  z-index: 0;
+}
+
+@media (max-width: 450px) {
+  .inputEmail {
+    width: 100%;
+    form {
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
+  }
 }

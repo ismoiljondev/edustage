@@ -1,4 +1,4 @@
-"use cleient";
+"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -22,18 +22,24 @@ function Menu(props: SearchInputPropsType) {
   const { buttonClick, canditionMenu, canditionMenuSet } = props;
 
   function isActive(path: string): boolean {
-    return pathname === path ? true : false;
+    return pathname === path;
   }
 
   return (
-    <ul className={clsx(canditionMenu ? style.open__menu : style.close__menu)}>
+    <ul
+      className={clsx({
+        [style.open__menu]: canditionMenu,
+        [style.close__menu]: !canditionMenu,
+      })}
+    >
       {menuLinks.map((e, i) => (
-        <li key={e.key}>
+        <li key={i}>
           <Typography
             as="h6"
-            additionalStyle={clsx(
-              isActive(e.href) ? style.active : style.not__active
-            )}
+            additionalStyle={clsx({
+              [style.active]: isActive(e.href),
+              [style.not__active]: !isActive(e.href),
+            })}
           >
             <Link href={e.href} onClick={canditionMenuSet}>
               {e.localeKey}
@@ -46,9 +52,8 @@ function Menu(props: SearchInputPropsType) {
         <button className={clsx(style.button__search)} onClick={buttonClick}>
           <IconSearch
             className={clsx(
-              isActive("/")
-                ? style.icon__search
-                : style.header__universal__icon__search
+              { [style.icon__search]: isActive("/") },
+              { [style.header__universal__icon__search]: !isActive("/") }
             )}
           />
         </button>

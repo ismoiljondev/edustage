@@ -1,6 +1,8 @@
 "use client";
+
 import Head from "next/head";
-import HomeView from "@/src/viwes/Home";
+
+import HomeView from "@/src/views/Home";
 
 export default function Home() {
   return (

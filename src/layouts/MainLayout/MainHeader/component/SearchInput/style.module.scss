@@ -1,4 +1,10 @@
-@import "@/src/variables/variables.module.scss";
+@import "@/src/styles/variables/variables.module.scss";
+
+@mixin flex__acenter {
+  display: flex;
+  align-items: center;
+}
+
 .search__icon {
   fill: white;
 }
@@ -9,8 +15,7 @@
 
   form {
     width: 100%;
-    display: flex;
-    align-items: center;
+    @include flex__acenter;
     justify-content: space-between;
     overflow: hidden;
 
@@ -32,8 +37,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    display: flex;
-    align-items: center;
+    @include flex__acenter;
     justify-content: center;
   }
 }

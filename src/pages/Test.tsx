@@ -2,16 +2,14 @@ import Typography from "@/src/components/Typography/Typography";
 import style from "@/src/pages/style.module.scss";
 import Container from "../components/Container/Container";
 import clsx from "clsx";
+import Showcase from "../components/Sowcase/Showcase";
 
 function Test() {
   return (
     <div>
-      <div className={clsx(style.showcase)}></div>
+      <Showcase title="About Us" pageName="about" />
       <h1>test</h1>
-      <Container>
-        <Typography as="h3">15</Typography>
-        <Typography as="h1">ONE STEP AHEAD THIS SEASON</Typography>
-      </Container>
+
       <p style={{ textAlign: "center" }}>lorem</p>
       <Typography as="p">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non at omnis

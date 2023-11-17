@@ -1,3 +1,4 @@
+"use client";
 import clsx from "clsx";
 
 import Container from "@/src/components/Container/Container";
